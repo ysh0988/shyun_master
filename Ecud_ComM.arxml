@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="35908d63-2d67-4db7-aad5-959ae91539d0">
+      <SHORT-NAME>AUTRON</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="a643404a-3004-4471-81c3-48a95b38b446">
+          <SHORT-NAME>ComM</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTRON/ComM</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/Bsw_ComM/BswImplementation_ComM</MODULE-DESCRIPTION-REF>
+          <POST-BUILD-VARIANT-USED>false</POST-BUILD-VARIANT-USED>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="273ccde7-2751-4c0d-8f2e-db18203c7603">
+              <SHORT-NAME>ComMGeneral</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                    <SD GID="ComMPncPrepareSleepTimer">true</SD>
+                    <SD GID="ComMPncSupport">true</SD>
+                    <SD GID="ComMCanCMSupport">true</SD>
+                    <SD GID="ComMPncGatewayEnabled">true</SD>
+                  </SDG>
+                  <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                    <SD T="2025-03-17T09:51:49Z" GID="ComMPncPrepareSleepTimer">0.5</SD>
+                    <SD T="2025-03-17T09:51:49Z" GID="ComMPncSupport">1</SD>
+                    <SD T="2025-03-17T09:51:49Z" GID="ComMCanCMSupport">1</SD>
+                    <SD T="2025-03-17T09:51:49Z" GID="ComMPncGatewayEnabled">0</SD>
+                  </SDG>
+                  <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                    <SD T="2022-02-23T14:28:44Z" GID="ComMPncGatewayEnabled">0</SD>
+                    <SD T="2025-03-17T12:30:47Z" GID="ComMModeLimitationEnabled">1</SD>
+                    <SD T="2025-03-17T11:53:21Z" GID="ComMWakeupInhibitionEnabled">1</SD>
+                    <SD T="2024-06-04T09:58:21Z" GID="ComMCanCMSupport">1</SD>
+                    <SD T="2025-03-17T11:57:23Z" GID="ComMBusloadDetectingApi">0</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMEcuGroupClassification</DEFINITION-REF>
+                  <VALUE>3</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMPncSupport</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMResetAfterForcingNoComm</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMSynchronousWakeUp</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMTMinFullComModeDuration</DEFINITION-REF>
+                  <VALUE>5</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMVersionInfoApi</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMWakeupInhibitionEnabled</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComM0PncVectorAvoidance</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMPncGatewayEnabled</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMDirectUserMapping</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMPncPrepareSleepTimer</DEFINITION-REF>
+                  <VALUE>0.5</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMDevErrorDetect</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMCanCMSupport</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMModeLimitationEnabled</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMGeneral/ComMBusloadDetectingApi</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="d5ad8e9a-d375-4926-a902-2e6eb9c57d01">
+              <SHORT-NAME>ComMConfigSet</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                    <SD GID="ComMPncEnabled">true</SD>
+                  </SDG>
+                  <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                    <SD T="2025-03-17T09:51:49Z" GID="ComMPncEnabled">1</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPncEnabled</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="a3442090-02ac-44c0-8d65-6f418f40ff5b">
+                  <SHORT-NAME>ComMUser_PNC32</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMUserIdentifier">2</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="ComMUserIdentifier">true</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMUser</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMUser/ComMUserIdentifier</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="fb80b9bd-fbb6-457a-911c-33dbf767ce36">
+                  <SHORT-NAME>ComMPnc_PNC32</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMPncId">32</SD>
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMChannelPerPnc">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</SD>
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMUserPerPnc">/AUTRON/ComM/ComMConfigSet/ComMUser_PNC32</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="ComMPncId">true</SD>
+                        <SD GID="ComMChannelPerPnc">true</SD>
+                        <SD GID="ComMUserPerPnc">true</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncId</DEFINITION-REF>
+                      <VALUE>32</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMUserPerPnc</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/ComM/ComMConfigSet/ComMUser_PNC32</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMChannelPerPnc</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="f1fb009a-a08c-4dda-a17d-f8b4a6d92560">
+                      <SHORT-NAME>ComMPnc_ComSignal_Rx_Can_PNC_32</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalKind">EIRA</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalDirection">RX</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalRef">/AUTRON/Com/ComConfig/ComISignal_Rx_EIRA_CanNm</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="ComMPncComSignalKind">true</SD>
+                            <SD GID="ComMPncComSignalDirection">true</SD>
+                            <SD GID="ComMPncComSignalRef">true</SD>
+                          </SDG>
+                          <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                            <SD T="2025-02-13T09:07:18Z" GID="ComMPncComSignalChannelRef">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalKind</DEFINITION-REF>
+                          <VALUE>EIRA</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalDirection</DEFINITION-REF>
+                          <VALUE>RX</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalChannelRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/Com/ComConfig/ComISignal_Rx_EIRA_CanNm</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="54c330bc-8c2e-47af-87f9-4fd801e3f653">
+                      <SHORT-NAME>ComMPnc_ComSignal_Tx_CCAN_PNC_32</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalKind">EIRA</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalDirection">TX</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalChannelRef">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalRef">/AUTRON/Com/ComConfig/ComISignal_Tx_PncVector_CCAN</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="ComMPncComSignalKind">true</SD>
+                            <SD GID="ComMPncComSignalDirection">true</SD>
+                            <SD GID="ComMPncComSignalChannelRef">true</SD>
+                            <SD GID="ComMPncComSignalRef">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalKind</DEFINITION-REF>
+                          <VALUE>EIRA</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalDirection</DEFINITION-REF>
+                          <VALUE>TX</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalChannelRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/Com/ComConfig/ComISignal_Tx_PncVector_CCAN</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="7f996d7e-8741-416a-96bf-509ad9afae3c">
+                  <SHORT-NAME>ComMChannel_CCAN</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMNoWakeUpInhibitionNvmStorage">0</SD>
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMBusType">COMM_BUS_TYPE_CAN</SD>
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMChannelId">0</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="ComMNoWakeUpInhibitionNvmStorage">true</SD>
+                        <SD GID="ComMBusType">true</SD>
+                        <SD GID="ComMChannelId">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:DEFAULT_CONFIGURED">
+                        <SD T="2025-02-12T16:44:50Z" GID="ComMMainFunctionPeriod">0.005</SD>
+                        <SD T="2025-02-12T16:44:50Z" GID="ComMNoCom">0</SD>
+                        <SD T="2025-02-12T16:44:50Z" GID="ComMFullCommRequestNotificationEnabled">0</SD>
+                        <SD T="2025-02-12T16:44:50Z" GID="ComMNoWakeup">0</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                        <SD T="2025-03-17T11:53:37Z" GID="ComMNoCom">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMChannel</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMChannel/ComMNoWakeUpInhibitionNvmStorage</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMChannel/ComMBusType</DEFINITION-REF>
+                      <VALUE>COMM_BUS_TYPE_CAN</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMChannel/ComMChannelId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMChannel/ComMMainFunctionPeriod</DEFINITION-REF>
+                      <VALUE>0.005</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMChannel/ComMNoCom</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMChannel/ComMFullCommRequestNotificationEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMChannel/ComMNoWakeup</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="b1d171b8-675d-45bc-9ed8-f9363ed16189">
+                      <SHORT-NAME>ComMNetworkManagement_CCAN</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMNmLightTimeout">0</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMNmVariant">FULL</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncNmRequest">0</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="ComMNmLightTimeout">true</SD>
+                            <SD GID="ComMNmVariant">true</SD>
+                            <SD GID="ComMPncNmRequest">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMChannel/ComMNetworkManagement</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMChannel/ComMNetworkManagement/ComMNmLightTimeout</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMChannel/ComMNetworkManagement/ComMNmVariant</DEFINITION-REF>
+                          <VALUE>FULL</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMChannel/ComMNetworkManagement/ComMPncNmRequest</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="bc383e6f-cfce-4d51-9a23-6b8fa501400f">
+                  <SHORT-NAME>ComMUser_PNC171</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMUserIdentifier">0</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="ComMUserIdentifier">true</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMUser</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMUser/ComMUserIdentifier</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="308d3dec-c30d-45de-8610-0a56b69696fe">
+                  <SHORT-NAME>ComMUser_PNC152</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMUserIdentifier">1</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="ComMUserIdentifier">true</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMUser</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMUser/ComMUserIdentifier</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="c47876ee-0db5-4fa2-9e01-6923abe58424">
+                  <SHORT-NAME>ComMPnc_PNC171</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMPncId">171</SD>
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMChannelPerPnc">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</SD>
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMUserPerPnc">/AUTRON/ComM/ComMConfigSet/ComMUser_PNC171</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="ComMPncId">true</SD>
+                        <SD GID="ComMChannelPerPnc">true</SD>
+                        <SD GID="ComMUserPerPnc">true</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncId</DEFINITION-REF>
+                      <VALUE>171</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMChannelPerPnc</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMUserPerPnc</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/ComM/ComMConfigSet/ComMUser_PNC171</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="04f303d0-64ea-480b-9174-eb3e6e5e0a04">
+                      <SHORT-NAME>ComMPnc_ComSignal_Tx_CCAN_PNC_171</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalKind">EIRA</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalDirection">TX</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalChannelRef">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalRef">/AUTRON/Com/ComConfig/ComISignal_Tx_PncVector_CCAN</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="ComMPncComSignalKind">true</SD>
+                            <SD GID="ComMPncComSignalDirection">true</SD>
+                            <SD GID="ComMPncComSignalChannelRef">true</SD>
+                            <SD GID="ComMPncComSignalRef">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalKind</DEFINITION-REF>
+                          <VALUE>EIRA</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalDirection</DEFINITION-REF>
+                          <VALUE>TX</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalChannelRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/Com/ComConfig/ComISignal_Tx_PncVector_CCAN</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="ddc0bf26-7854-4638-b6b4-0093cfa125f1">
+                      <SHORT-NAME>ComMPnc_ComSignal_Rx_Can_PNC_171</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalKind">EIRA</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalDirection">RX</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalRef">/AUTRON/Com/ComConfig/ComISignal_Rx_EIRA_CanNm</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="ComMPncComSignalKind">true</SD>
+                            <SD GID="ComMPncComSignalDirection">true</SD>
+                            <SD GID="ComMPncComSignalRef">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalKind</DEFINITION-REF>
+                          <VALUE>EIRA</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalDirection</DEFINITION-REF>
+                          <VALUE>RX</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/Com/ComConfig/ComISignal_Rx_EIRA_CanNm</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="740b45d4-fa41-4397-8def-4f71a67d706f">
+                  <SHORT-NAME>ComMPnc_PNC152</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMPncId">152</SD>
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMChannelPerPnc">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</SD>
+                        <SD T="2025-03-17T09:51:49Z" GID="ComMUserPerPnc">/AUTRON/ComM/ComMConfigSet/ComMUser_PNC152</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="ComMPncId">true</SD>
+                        <SD GID="ComMChannelPerPnc">true</SD>
+                        <SD GID="ComMUserPerPnc">true</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncId</DEFINITION-REF>
+                      <VALUE>152</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMChannelPerPnc</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMUserPerPnc</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/ComM/ComMConfigSet/ComMUser_PNC152</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="9d1a51c5-2098-46cd-8214-066e7611f559">
+                      <SHORT-NAME>ComMPnc_ComSignal_Tx_CCAN_PNC_152</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalKind">EIRA</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalDirection">TX</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalChannelRef">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalRef">/AUTRON/Com/ComConfig/ComISignal_Tx_PncVector_CCAN</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="ComMPncComSignalKind">true</SD>
+                            <SD GID="ComMPncComSignalDirection">true</SD>
+                            <SD GID="ComMPncComSignalChannelRef">true</SD>
+                            <SD GID="ComMPncComSignalRef">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalKind</DEFINITION-REF>
+                          <VALUE>EIRA</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalDirection</DEFINITION-REF>
+                          <VALUE>TX</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalChannelRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/ComM/ComMConfigSet/ComMChannel_CCAN</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/Com/ComConfig/ComISignal_Tx_PncVector_CCAN</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="dd63bada-6c84-45e9-9d4e-f2ca17b8aa6d">
+                      <SHORT-NAME>ComMPnc_ComSignal_Rx_Can_PNC_152</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalKind">EIRA</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalDirection">RX</SD>
+                            <SD T="2025-03-17T09:51:49Z" GID="ComMPncComSignalRef">/AUTRON/Com/ComConfig/ComISignal_Rx_EIRA_CanNm</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="ComMPncComSignalKind">true</SD>
+                            <SD GID="ComMPncComSignalDirection">true</SD>
+                            <SD GID="ComMPncComSignalRef">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalKind</DEFINITION-REF>
+                          <VALUE>EIRA</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalDirection</DEFINITION-REF>
+                          <VALUE>RX</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTRON/ComM/ComMConfigSet/ComMPnc/ComMPncComSignal/ComMPncComSignalRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/AUTRON/Com/ComConfig/ComISignal_Rx_EIRA_CanNm</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+
