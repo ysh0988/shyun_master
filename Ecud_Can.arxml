@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Can_43_FLEXCAN</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="3025fe03-04ae-4225-9def-0ee248850dd1">
+          <SHORT-NAME>Can</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-POST-BUILD</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Implementations/BswImplementation_Can</MODULE-DESCRIPTION-REF>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>CanConfigSet</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="526df95e-5181-4bd1-a28b-87aea7dd5e5f">
+                  <SHORT-NAME>SGU_FD_B2</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerId">0</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerActivation">1</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerDefaultBaudrate">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2/CanControllerBaudrateConfig</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwChannel">FLEXCAN_0</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanControllerId">true</SD>
+                        <SD GID="CanControllerActivation">true</SD>
+                        <SD GID="CanControllerDefaultBaudrate">true</SD>
+                        <SD GID="CanHwChannel">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:DEFAULT_CONFIGURED">
+                        <SD T="2024-05-03T11:36:31Z" GID="CanWakeupFunctionalityAPI">0</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanBusoffProcessing">POLLING</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanWakeupSupport">0</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanControllerBaseAddress">0</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanTxProcessing">POLLING</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanRxProcessing">POLLING</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanClockFromBus">1</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanWakeupProcessing">POLLING</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanControllerPrExcEn">0</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanControllerFdISO">1</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanLoopBackMode">0</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanHwChannel">FLEXCAN_0</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanTrippleSamplingEnable">0</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanControllerEdgeFilter">0</SD>
+                        <SD T="2024-05-03T11:36:31Z" GID="CanAutoBusOffRecovery">0</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                        <SD T="2024-05-29T13:31:20Z" GID="CanCpuClockRef">/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_FXOSC_CLK</SD>
+                        <SD T="2024-05-03T13:14:43Z" GID="CanRxProcessing">INTERRUPT</SD>
+                        <SD T="2024-05-03T13:14:44Z" GID="CanTxProcessing">INTERRUPT</SD>
+                        <SD T="2024-05-03T13:14:46Z" GID="CanBusoffProcessing">INTERRUPT</SD>
+                        <SD T="2024-05-03T13:15:31Z" GID="CanControllerBaseAddress">0x40304000</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerActivation</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanWakeupFunctionalityAPI</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanBusoffProcessing</DEFINITION-REF>
+                      <VALUE>INTERRUPT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanWakeupSupport</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaseAddress</DEFINITION-REF>
+                      <VALUE>1076903936</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanTxProcessing</DEFINITION-REF>
+                      <VALUE>INTERRUPT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanRxProcessing</DEFINITION-REF>
+                      <VALUE>INTERRUPT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanClockFromBus</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanWakeupProcessing</DEFINITION-REF>
+                      <VALUE>POLLING</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerPrExcEn</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerFdISO</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanLoopBackMode</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanHwChannel</DEFINITION-REF>
+                      <VALUE>FLEXCAN_0</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanTrippleSamplingEnable</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerEdgeFilter</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanAutoBusOffRecovery</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanCpuClockRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_FXOSC_CLK</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerDefaultBaudrate</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2/CanControllerBaudrateConfig</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="c937a2e8-7769-42cb-9ce2-70b84cbebc6d">
+                      <SHORT-NAME>CanControllerBaudrateConfig</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:DEFAULT_CONFIGURED">
+                            <SD T="2024-05-03T11:36:31Z" GID="CanControllerBaudRateConfigID">0</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanControllerSyncJumpWidth">1</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanControllerPrescaller">10</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanControllerPrescallerAlternate">10</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanControllerBaudRate">20.0</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanBaudrateTypeSuport">NORMAL_CBT</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanControllerSeg2">6</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanBusLength">40</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanControllerSeg1">5</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanTxArbitrationStartDelay">0</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanControllerSyncSeg">1</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanControllerPropSeg">5</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanPropDelayTranceiver">150.0</SD>
+                            <SD T="2024-05-03T11:36:31Z" GID="CanAdvancedSetting">0</SD>
+                          </SDG>
+                          <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                            <SD T="2024-05-03T11:38:18Z" GID="CanTxArbitrationStartDelay">12</SD>
+                            <SD T="2026-03-26T15:05:51Z" GID="CanControllerPrescaller">5</SD>
+                            <SD T="2024-05-03T11:38:20Z" GID="CanControllerPrescallerAlternate">1</SD>
+                            <SD T="2024-05-03T11:38:26Z" GID="CanControllerBaudRate">500</SD>
+                            <SD T="2026-03-26T15:16:55Z" GID="CanControllerPropSeg">4</SD>
+                            <SD T="2026-03-26T15:15:55Z" GID="CanControllerSeg1">8</SD>
+                            <SD T="2026-03-26T15:16:46Z" GID="CanControllerSeg2">3</SD>
+                            <SD T="2026-03-26T15:06:05Z" GID="CanControllerSyncJumpWidth">1</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="CanControllerBaudRateConfigID">true</SD>
+                            <SD GID="CanControllerSyncJumpWidth">true</SD>
+                            <SD GID="CanControllerPrescaller">true</SD>
+                            <SD GID="CanControllerPrescallerAlternate">true</SD>
+                            <SD GID="CanControllerBaudRate">true</SD>
+                            <SD GID="CanBaudrateTypeSuport">true</SD>
+                            <SD GID="CanControllerSeg2">true</SD>
+                            <SD GID="CanBusLength">true</SD>
+                            <SD GID="CanControllerSeg1">true</SD>
+                            <SD GID="CanTxArbitrationStartDelay">true</SD>
+                            <SD GID="CanControllerSyncSeg">true</SD>
+                            <SD GID="CanControllerPropSeg">true</SD>
+                            <SD GID="CanPropDelayTranceiver">true</SD>
+                            <SD GID="CanAdvancedSetting">true</SD>
+                          </SDG>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-11-05T13:05:50Z" GID="CanControllerBaudRateConfigID">0</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanControllerSyncJumpWidth">16</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanControllerPrescaller">1</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanControllerPrescallerAlternate">1</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanControllerBaudRate">500</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanBaudrateTypeSuport">NORMAL_CBT</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanControllerSeg2">16</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanBusLength">40</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanControllerSeg1">32</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanTxArbitrationStartDelay">12</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanControllerSyncSeg">1</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanControllerPropSeg">31</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanPropDelayTranceiver">150.0</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanAdvancedSetting">0</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanControllerBaudRateConfigID</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanControllerSyncJumpWidth</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanControllerPrescaller</DEFINITION-REF>
+                          <VALUE>5</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanControllerPrescallerAlternate</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanControllerBaudRate</DEFINITION-REF>
+                          <VALUE>500</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanBaudrateTypeSuport</DEFINITION-REF>
+                          <VALUE>NORMAL_CBT</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanControllerSeg2</DEFINITION-REF>
+                          <VALUE>3</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanBusLength</DEFINITION-REF>
+                          <VALUE>40</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanControllerSeg1</DEFINITION-REF>
+                          <VALUE>8</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanTxArbitrationStartDelay</DEFINITION-REF>
+                          <VALUE>12</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanControllerSyncSeg</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanControllerPropSeg</DEFINITION-REF>
+                          <VALUE>4</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanPropDelayTranceiver</DEFINITION-REF>
+                          <VALUE>150.0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanController/CanControllerBaudrateConfig/CanAdvancedSetting</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="2595e0e3-1c45-4a3b-80ce-91e47ca63b85">
+                  <SHORT-NAME>IN_HwObj_SGU_FD_B2_0x35_FD_B2_VCU_01_10ms</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">RECEIVE</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHandleType">FULL</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">1</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">STANDARD</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">0</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanHwObjectCount">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>RECEIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>FULL</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>STANDARD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="42fff697-7734-4ce1-ad53-00c19a2700c0">
+                      <SHORT-NAME>CanHwFilter0</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterMask">2047</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterCode">53</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="CanHwFilterMask">true</SD>
+                            <SD GID="CanHwFilterCode">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterMask</DEFINITION-REF>
+                          <VALUE>2047</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterCode</DEFINITION-REF>
+                          <VALUE>53</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d21f5f40-bf47-4101-8c6f-40debb6bd002">
+                  <SHORT-NAME>IN_HwObj_SGU_FD_B2_0x10_FD_B2_ACU_02_00ms</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">RECEIVE</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHandleType">FULL</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">1</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">STANDARD</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">1</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanHwObjectCount">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>RECEIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>FULL</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>STANDARD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="db91b712-6f44-4e6f-bf04-01b4e9c136d2">
+                      <SHORT-NAME>CanHwFilter0</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterMask">2047</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterCode">16</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="CanHwFilterMask">true</SD>
+                            <SD GID="CanHwFilterCode">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterMask</DEFINITION-REF>
+                          <VALUE>2047</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterCode</DEFINITION-REF>
+                          <VALUE>16</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="cc94d43b-366e-473e-963d-c3e1d9ace2aa">
+                  <SHORT-NAME>IN_HwObj_SGU_FD_B2_0x7df_FD_B2_GST_ALL</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">RECEIVE</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHandleType">FULL</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">1</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">STANDARD</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">2</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanHwObjectCount">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>RECEIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>FULL</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>STANDARD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="0bf0b274-e373-4352-8b1c-89d402451504">
+                      <SHORT-NAME>CanHwFilter0</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterMask">2047</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterCode">2015</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="CanHwFilterMask">true</SD>
+                            <SD GID="CanHwFilterCode">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterMask</DEFINITION-REF>
+                          <VALUE>2047</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterCode</DEFINITION-REF>
+                          <VALUE>2015</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="655d9fd6-3691-4e38-b560-92f1c541f13b">
+                  <SHORT-NAME>IN_HwObj_0x80_0xfb_SGU_FD_B2</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">RECEIVE</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHandleType">BASIC</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">STANDARD</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">3</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">3</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanHwObjectCount">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                        <SD T="2025-11-05T13:06:17Z" GID="CanHwObjectCount">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>RECEIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>BASIC</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>STANDARD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>3</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="4cd4c519-9539-434e-8a5a-a2f3020a1526">
+                      <SHORT-NAME>CanHwFilter0</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterMask">1924</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterCode">128</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="CanHwFilterMask">true</SD>
+                            <SD GID="CanHwFilterCode">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterMask</DEFINITION-REF>
+                          <VALUE>1924</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterCode</DEFINITION-REF>
+                          <VALUE>128</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="3f2f5807-55f0-4b9c-8a8a-b67031ce31a5">
+                  <SHORT-NAME>IN_HwObj_0x100_0x1b7_SGU_FD_B2</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">RECEIVE</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHandleType">BASIC</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">STANDARD</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">5</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">4</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanHwObjectCount">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                        <SD T="2025-11-05T13:06:17Z" GID="CanHwObjectCount">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>RECEIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>BASIC</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>STANDARD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>4</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="b42e2212-3cab-474c-a347-42a29b3fe388">
+                      <SHORT-NAME>CanHwFilter0</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterMask">1864</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterCode">256</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="CanHwFilterMask">true</SD>
+                            <SD GID="CanHwFilterCode">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterMask</DEFINITION-REF>
+                          <VALUE>1864</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterCode</DEFINITION-REF>
+                          <VALUE>256</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="ac6d3656-3e60-4eb1-bad8-e29ae33ca92f">
+                  <SHORT-NAME>IN_HwObj_0x2a0_0x2ff_SGU_FD_B2</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">RECEIVE</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHandleType">BASIC</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">STANDARD</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">6</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">5</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanHwObjectCount">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                        <SD T="2025-11-05T13:06:17Z" GID="CanHwObjectCount">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>RECEIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>BASIC</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>STANDARD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>5</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="b5cd0b74-879a-4218-9b67-8baf01d80e80">
+                      <SHORT-NAME>CanHwFilter0</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterMask">1952</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterCode">672</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="CanHwFilterMask">true</SD>
+                            <SD GID="CanHwFilterCode">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterMask</DEFINITION-REF>
+                          <VALUE>1952</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterCode</DEFINITION-REF>
+                          <VALUE>672</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="47be1d02-b2ea-4375-825a-afe9717d734a">
+                  <SHORT-NAME>IN_HwObj_0x340_0x3f7_SGU_FD_B2</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">RECEIVE</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHandleType">BASIC</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">STANDARD</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">5</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">6</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanHwObjectCount">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                        <SD T="2025-11-05T13:06:18Z" GID="CanHwObjectCount">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>RECEIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>BASIC</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>STANDARD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>6</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="b91c04cf-ef7a-49b1-9f61-186f2777dccb">
+                      <SHORT-NAME>CanHwFilter0</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterMask">1864</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterCode">832</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="CanHwFilterMask">true</SD>
+                            <SD GID="CanHwFilterCode">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterMask</DEFINITION-REF>
+                          <VALUE>1864</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterCode</DEFINITION-REF>
+                          <VALUE>832</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="cb050955-f3a2-4e93-a2cc-2d3d91aacda3">
+                  <SHORT-NAME>IN_HwObj_0x400_0x4c2_SGU_FD_B2</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">RECEIVE</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHandleType">BASIC</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">STANDARD</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">2</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">7</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanHwObjectCount">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                        <SD T="2025-11-05T13:06:18Z" GID="CanHwObjectCount">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>RECEIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>BASIC</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>STANDARD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>7</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="f488e966-f0be-4f78-9524-d50e503b725e">
+                      <SHORT-NAME>CanHwFilter0</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterMask">1853</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterCode">1024</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="CanHwFilterMask">true</SD>
+                            <SD GID="CanHwFilterCode">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterMask</DEFINITION-REF>
+                          <VALUE>1853</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterCode</DEFINITION-REF>
+                          <VALUE>1024</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="1875319f-6f69-4c7b-ad1d-773e269c8495">
+                  <SHORT-NAME>IN_HwObj_0x500_0x5e7_SGU_FD_B2</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">RECEIVE</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHandleType">BASIC</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">STANDARD</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">2</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">8</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanHwObjectCount">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                        <SD T="2025-11-05T13:06:19Z" GID="CanHwObjectCount">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>RECEIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>BASIC</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>STANDARD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>8</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="2384b3b2-eb1f-4569-a6aa-7930943516dd">
+                      <SHORT-NAME>CanHwFilter0</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterMask">1816</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterCode">1280</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="CanHwFilterMask">true</SD>
+                            <SD GID="CanHwFilterCode">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterMask</DEFINITION-REF>
+                          <VALUE>1816</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterCode</DEFINITION-REF>
+                          <VALUE>1280</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="542fc6a7-9605-4638-bc3c-360d8bad43da">
+                  <SHORT-NAME>IN_HwObj_0x17fc0000_0x17fc00fe_SGU_FD_B2_NM_Message</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">RECEIVE</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHandleType">BASIC</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">EXTENDED</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">27</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">9</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanHwObjectCount">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                        <SD T="2025-11-05T13:06:20Z" GID="CanHwObjectCount">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>RECEIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>BASIC</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>EXTENDED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>9</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="8a87da05-c573-4d37-b1c3-bb1b172bb205">
+                      <SHORT-NAME>CanHwFilter0</SHORT-NAME>
+                      <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterMask">536870656</SD>
+                            <SD T="2025-11-05T13:05:50Z" GID="CanHwFilterCode">402391040</SD>
+                          </SDG>
+                          <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                            <SD GID="CanHwFilterMask">true</SD>
+                            <SD GID="CanHwFilterCode">true</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterMask</DEFINITION-REF>
+                          <VALUE>536870656</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwFilter/CanHwFilterCode</DEFINITION-REF>
+                          <VALUE>402391040</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="04b6b4a4-0da3-4640-9b82-8befefd52df7">
+                  <SHORT-NAME>OUT_HwObj_SGU_FD_B2_0x17fc00be_FD_B2_NM_SGU_FD</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">TRANSMIT</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2026-03-04T13:38:23Z" GID="CanHandleType">FULL</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">EXTENDED</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">10</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:DEFAULT_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>TRANSMIT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>FULL</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>EXTENDED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>10</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="468bdb0d-4289-445e-a3be-e0586983455b">
+                  <SHORT-NAME>OUT_HwObj_SGU_FD_B2_0x58c_FD_B2_SGU_GST</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">TRANSMIT</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2026-03-04T13:38:23Z" GID="CanHandleType">FULL</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">STANDARD</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">11</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:DEFAULT_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>TRANSMIT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>FULL</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>STANDARD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>11</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="637f5a7b-9f51-4769-9552-545b6aea06b5">
+                  <SHORT-NAME>OUT_HwObj_SGU_FD_B2_0x388_FD_B2_SGU_FD_01_500ms</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">TRANSMIT</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2026-03-04T13:38:23Z" GID="CanHandleType">FULL</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">STANDARD</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">12</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:DEFAULT_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>TRANSMIT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>FULL</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>STANDARD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>12</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="1d8f7d07-75e2-416a-9176-890f75dc470f">
+                  <SHORT-NAME>OUT_HwObj_SGU_FD_B2_0x333_FD_B2_SGU_FD_02_500ms</SHORT-NAME>
+                  <CATEGORY>TOOL_CONFIGURED</CATEGORY>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectType">TRANSMIT</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanControllerRef">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</SD>
+                        <SD T="2026-03-04T13:38:23Z" GID="CanHandleType">FULL</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanIdType">STANDARD</SD>
+                        <SD T="2025-11-05T13:05:50Z" GID="CanObjectId">13</SD>
+                      </SDG>
+                      <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                        <SD GID="CanObjectType">true</SD>
+                        <SD GID="CanHandleType">true</SD>
+                        <SD GID="CanIdType">true</SD>
+                        <SD GID="CanObjectId">true</SD>
+                        <SD GID="CanControllerRef">true</SD>
+                      </SDG>
+                      <SDG GID="ODIN_WRITER_TYPE:DEFAULT_CONFIGURED">
+                        <SD T="2025-11-05T13:05:50Z" GID="CanHwObjectCount">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectType</DEFINITION-REF>
+                      <VALUE>TRANSMIT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHandleType</DEFINITION-REF>
+                      <VALUE>FULL</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanIdType</DEFINITION-REF>
+                      <VALUE>STANDARD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanObjectId</DEFINITION-REF>
+                      <VALUE>13</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanHwObjectCount</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanConfigSet/CanHardwareObject/CanControllerRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Can_43_FLEXCAN/Can/CanConfigSet/SGU_FD_B2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>CanGeneral</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                    <SD GID="CanMultiplexedTransmission">true</SD>
+                  </SDG>
+                  <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                    <SD T="2025-11-05T13:05:51Z" GID="CanMultiplexedTransmission">1</SD>
+                  </SDG>
+                  <SDG GID="ODIN_WRITER_TYPE:DEFAULT_CONFIGURED">
+                    <SD T="2023-12-22T08:34:17Z" GID="CanEnableSecurityEventReporting">0</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanDevErrorDetect</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanEnableDualClockMode</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanEnableUserModeSupport</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanGlobalTimeSupport</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanIndex</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanMBCountExtensionSupport</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanMainFunctionModePeriod</DEFINITION-REF>
+                  <VALUE>0.005</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanMulticoreSupport</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanMultiplexedTransmission</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanPublicIcomSupport</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanTimeoutDuration</DEFINITION-REF>
+                  <VALUE>1.0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanTimeoutMethod</DEFINITION-REF>
+                  <VALUE>OSIF_COUNTER_DUMMY</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanVersionInfoApi</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CanGeneral/CanEnableSecurityEventReporting</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>CommonPublishedInformation</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                    <SD T="2024-03-26T14:32:00Z" GID="SwPatchVersion">0</SD>
+                    <SD T="2024-03-26T14:31:57Z" GID="SwMajorVersion">3</SD>
+                    <SD T="2024-03-26T15:34:56Z" GID="VendorApiInfix"/>
+                  </SDG>
+                  <SDG GID="ODIN_WRITER_TYPE:DEFAULT_CONFIGURED">
+                    <SD T="2024-04-08T10:15:57Z" GID="VendorApiInfix">FLEXCAN</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CommonPublishedInformation</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CommonPublishedInformation/ArReleaseMajorVersion</DEFINITION-REF>
+                  <VALUE>4</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CommonPublishedInformation/ArReleaseMinorVersion</DEFINITION-REF>
+                  <VALUE>4</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CommonPublishedInformation/ArReleaseRevisionVersion</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CommonPublishedInformation/ModuleId</DEFINITION-REF>
+                  <VALUE>80</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CommonPublishedInformation/SwMajorVersion</DEFINITION-REF>
+                  <VALUE>3</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CommonPublishedInformation/SwMinorVersion</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CommonPublishedInformation/SwPatchVersion</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CommonPublishedInformation/VendorId</DEFINITION-REF>
+                  <VALUE>43</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Can_43_FLEXCAN_TS_T40D34M30I0R0/Can/CommonPublishedInformation/VendorApiInfix</DEFINITION-REF>
+                  <VALUE>FLEXCAN</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+
